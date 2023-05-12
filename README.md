@@ -1,14 +1,6 @@
 # GPS System
 This GPS system is designed to calculate the distance between two points on the earth's surface using a GPS module and a TM4C123GH6PM microcontroller. The program reads data from the GPS module, calculates the distance between the current location and the destination location, and turns on an LED based on that distance.
 
-## Hardware Requirements
-To use this system, you will need:
-
-- A GPS module
-- A TM4C123GH6PM microcontroller
-- Jumper wires
-- USB 2.0 Micro-B
-
 ## Setup
 To set up the hardware:
 
@@ -39,3 +31,28 @@ To use the system:
 2. Wait for the LED to turn green to indicate that the destination has been reached.
 3. If the LED turns yellow, you are getting close to the destination. If the LED turns red, you are far from the destination.
 
+## Contributors
+
+We want to assure you that all contributors to this project have a good understanding of each other's code, even though we divided the work among us.
+
+### GPS File
+
+- Yousef Shawky Mohamed (2001500)
+- Philopateer Sameh (2000955)
+- Fathy Abdelhady Fathy (2001152)
+
+### Main File
+
+- Omar Saleh Mohamed (2001993)
+- Ahmed Ayman Abd El Fatah (2000128)
+- Fady Adel Botros (2001388)
+
+### UART File
+
+- Adham Mohamed Mohamed Hassan (2001378)
+- Ezzat Tarek Mohamed alsayed (2001022)
+- Mohamed Ali Fadl Kassem (2000965)
+
+### GPIO File
+
+- Youssef Saad Gobran (2001440)
