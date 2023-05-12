@@ -26,6 +26,7 @@ void get_Degree_From_Latitude(char e,char w)
  a[2]='\0';
 
 }
+
 void get_Degree_From_Longitude(char e,char w,char r)
 {
 
