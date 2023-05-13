@@ -109,3 +109,58 @@ for(i=0;i<50;i++)
            if( (strcmp(f[1],"A")==0 )  & ( speed > 0.6 ) )
            {
 
+            
+            
+
+                 start_lat_tot = latitude_To_Decimal_Degree();
+                 start_long_tot = longitude_To_Decimal_Degree();
+
+                 end_lat_tot=30.123338;
+                 end_long_tot=31.367355;
+
+                 dist1 = fabs(getDistance(start_lat_tot,start_long_tot,end_lat_tot,end_long_tot) - 2.5);
+
+                 if(start2_lat_tot!=0)
+                 {
+                   dist2 = getDistance(start2_lat_tot,start2_long_tot,start_lat_tot,start_long_tot);
+                   total_Distance += dist2;
+                 }
+                 else
+                 {
+                   displacement=dist1;
+                 }
+
+                 if(dist1<0.5)
+                 {
+									 if(check==0)
+									 {
+										 distance_final = total_Distance;	
+										 check = 1;
+									 }
+				
+                   Output(GREEN);
+                 }
+                 else if(dist1<5)
+                 {
+                   Output(YELLOW);
+                 }
+                 else
+                 {
+                  Output(RED);
+                 }
+
+           }
+
+      }
+      else
+      {
+        cnt=0;
+      }
+
+ }
+
+
+}
+
+            
+            
