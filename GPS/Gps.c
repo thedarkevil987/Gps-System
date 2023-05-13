@@ -48,3 +48,30 @@ void get_mintues(char i, char j)
  }
 
 }
+
+float latitude_To_Decimal_Degree()
+{
+ float degree,latitude;
+
+ get_Degree_From_Latitude(f[2][0],f[2][1]);
+ degree = atof(a);
+
+ get_mintues(2,2);
+ latitude = degree + (atof(a)/60);
+
+ return latitude;
+
+}
+
+float longitude_To_Decimal_Degree()
+{
+ float degree,longitude;
+
+ get_Degree_From_Longitude(f[4][0],f[4][1],f[4][2]);
+ degree = atof(a);
+
+ get_mintues(4,3);
+ longitude = degree + (atof(a)/60);
+
+ return longitude;
+}
