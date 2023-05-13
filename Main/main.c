@@ -81,4 +81,31 @@ int main()
       }
       else if(x==',' & cnt==6)
       {
+for(i=0;i<50;i++)
+           {
+             x = UART1_ReadChar();
+             command[i]=x;
+           }
+
+           token = strtok(command,d);
+
+           i = 0;
+           while(token != NULL)
+           {
+
+             if(i==8)
+             {
+               break;
+             }
+
+             strcpy(f[i],token);
+             i++;
+             token = strtok(NULL,d);
+
+           }
+
+           speed = atof(f[6]);
+
+           if( (strcmp(f[1],"A")==0 )  & ( speed > 0.6 ) )
+           {
 
