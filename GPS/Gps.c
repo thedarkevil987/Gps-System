@@ -75,3 +75,23 @@ float longitude_To_Decimal_Degree()
 
  return longitude;
 }
+
+float getDistance(float s_lat,float s_long,float end_lat,float end_long)
+{
+
+ float o,p,z;
+
+ s_lat=s_lat*PI/180;
+ s_long=s_long*PI/180;
+
+ end_lat=end_lat*PI/180;
+ end_long=end_long*PI/180;
+
+ o=pow(sin((end_lat-s_lat)/2),2)+cos(s_lat)*cos(end_lat)*pow(sin((end_long-s_long)/2),2);
+
+ p=2*atan2(sqrt(o),sqrt(1-o));
+
+ z=p*6371000;
+
+ return z;
+}
